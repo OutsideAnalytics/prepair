@@ -3,13 +3,9 @@ FROM ubuntu:18.04
 
 # Update repos and install dependencies
 RUN apt-get update \
-  && apt-get -y upgrade \
-  && apt-get -y install build-essential \
-    python3-gdal \
+  && apt-get -y install libcgal-dev \
     libgdal-dev \
     gdal-bin \
-    libcgal-dev \
-    libcgal-qt5-dev \
     cmake \
     make \
     gcc
